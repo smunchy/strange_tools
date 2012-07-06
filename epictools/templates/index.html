@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Choose your epic tool.</title>
+</head>
+<body>
+
+<h1> Select an epic tool below to views it's posts.</h1>
+<p> More stuff here!</p>
+
+<!--  printing message -->
+{% if epicBlogTools %}
+
+       <ul>
+           {% for epicTools in epicBlogTools %}
+           <!-- epicTools must be the one to use get_absolute_url in order to make it function. -->
+           <!-- epicTools class is in models.py -->
+           <!-- class name / function name : epicTools.get_absolute_url-->
+           <li><a href="{{ epicTools.get_absolute_url }}">{{ epicTools }}</a></li>
+           {% endfor %}
+       </ul>
+
+{% endif %}
+</body>
+</html>
