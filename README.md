@@ -1,4 +1,6 @@
 strange_tools
 =============
 
-The new app, "Strange Tools"
+This is the birth of Strange Tools. 
+
+Currently the only thing available is the epic tools that have been started in this beginning process.
